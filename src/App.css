@@ -301,25 +301,28 @@ body {
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
 }
 
+.encoded-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+}
+
 .encoded-message {
   font-family: 'Courier New', monospace;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid #00ff00;
-  padding: 20px;
-  max-width: 80%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
-}
-
-.message-header, .message-footer {
-  color: #ff00de;
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.message-body {
-  color: #00ff00;
   font-size: 1rem;
-  word-break: break-all;
-  line-height: 1.5;
+  color: #00ff00;
+  background-color: #0a0a0a;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  width: 100%;
+  word-wrap: break-word;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.copy-button {
+  align-self: flex-end;
 }
